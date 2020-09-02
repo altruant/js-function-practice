@@ -54,8 +54,19 @@
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
+  function sum(arr) {
+    return arr.reduce(function(a, b){
+     return a+b;
+   }, 0);
+ }
+ console.log(sum([1,2,3,4]));
 
-
+  function multiply(arr) {
+    return arr.reduce(function(b,c) {
+      return b*c;
+    }, 1);
+  }
+  console.log(multiply([1,2,3,4]))
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
