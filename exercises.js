@@ -21,16 +21,20 @@
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
-  function maxofThree(num1, num2, num3) {
-   return Math.maxOfThree(num1, num2, num3);
- }
-
- console.log(maxOfThree(3, 10, 200));
+  function maxOfThree(num1, num2, num3) {
+    return Math.max(num1, num2, num3);
+  }
+  console.log(maxOfThree(3, 10, 200));
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
 
-
+  function isVowel(char) {
+    if (char.length == 1) {
+      const vowels = ["a", "e", "i", "o", "u"];
+      const isVowel = false
+    }
+  }
 
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
