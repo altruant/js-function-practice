@@ -66,12 +66,17 @@
       return b*c;
     }, 1);
   }
-  console.log(multiply([1,2,3,4]))
+  console.log(multiply([1,2,3,4]));
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
-
-
+  function reverse(str) {
+    let splitStr = str.split("");
+    let reverseArr = splitStr.reverse();
+    let joinArr = reverseArr.join("");
+    return joinArr;
+  }
+  console.log(reverse("testing"))
 
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
