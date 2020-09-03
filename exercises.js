@@ -112,8 +112,16 @@
   // ---------------------
 
   function charFreq(str) {
-    
+    const freqCount = {};
+    const strArray = str.split("")
+
+    for(let i = 0; i < strArray.length; i++) {
+      freqCount[strArray[i]] = freqCount[strArray[i]] + 1 || 1;
+
+    }
+    return freqCount;
   }
+  console.log(charFreq('addendum', 3));
 
   ////////////////////////////////////////////////////////////////////////
   /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////
