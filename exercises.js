@@ -100,7 +100,7 @@
     let longWordsArray = [];
     for(let j = 0; j<arr.length; j++) {
       if(arr[j].length > i) {
-        lonhWordsArray.push(arr[j]);
+        longWordsArray.push(arr[j]);
       }
     }
     return longWordsArray
@@ -111,6 +111,9 @@
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
 
+  function charFreq(str) {
+    
+  }
 
   ////////////////////////////////////////////////////////////////////////
   /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////
