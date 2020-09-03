@@ -31,12 +31,10 @@
 //   console.log("Something Cool!");
 // }
 
+// Put your answer below -------------------------
 const doSomethingCool = function() {
   console.log("Something Cool!");
 }
-
-// Put your answer below -------------------------
-
 
 // -----------------------------------------------
 
@@ -49,14 +47,16 @@ const doSomethingCool = function() {
 // after 2 seconds. Refactor to use an anonymous
 // function
 
-function sayHi() {
-  alert("Hello, World!");
-}
-
-setTimeout(sayHi, 2000);
+// function sayHi() {
+//   alert("Hello, World!");
+// }
+//
+// setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
+const sayHi = () => alert("Hello, World!");
+setTimeout(sayHi, 2000);
 
 // -----------------------------------------------
 
@@ -87,6 +87,7 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// [c] will log first because var letter is hoisted before the function
 
 // -----------------------------------------------
 
@@ -109,6 +110,10 @@ var reverseStr = function(str) {
 
 // Put your answer below -------------------------
 
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+  )
+}
 
 // -----------------------------------------------
 
@@ -143,6 +148,13 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+let spanishColor = {
+  "rojo": "#ff0000" ;
+  "blanco": "#ffffff";
+  "azul": "0000ff";
+  "verde": "#00ff00";
+  "negro": "#000000";
+}
 
 // -----------------------------------------------
 
@@ -160,6 +172,8 @@ var foo = "bar";
 
 // Put your answer below -------------------------
 
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -182,6 +196,10 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
+callNtimes = function(callback, n) {
+  var range = Array.from(Array(n).keys());
+  range.forEach(callback);
+}
 
 // -----------------------------------------------
 
@@ -209,8 +227,18 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
+(function() {
+`use strict`
+var score = 0;
 
+var increaseScore = function() {
+  score++;
+};
 
+var decreaseScore = function() {
+  score--;
+};
+})();
 // -----------------------------------------------
 
 //////////////////////////////////////////////////

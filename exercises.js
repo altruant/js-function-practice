@@ -82,12 +82,29 @@
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
 
-
+  function findLongestWord(str){
+    let longestWord = 0;
+    for (let i = 0; i < str.length; i++) {
+      if(str[i].length > longestWord) {
+        longestWord = str[i].length;
+      }
+    } return longestWord;
+  }
+  console.log(findLongestWord(["How", "many", "words", "are", "there", "really?"]))
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
 
+  function filterLongWords(arr, i) {
+    let longWordsArray = [];
+    for(let j = 0; j<arr.length; j++) {
+      if(arr[j].length > i) {
+        lonhWordsArray.push(arr[j]);
+      }
+    }
+    return longWordsArray
+  }
 
 
   // ---------------------
