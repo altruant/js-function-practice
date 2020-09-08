@@ -112,7 +112,6 @@ var reverseStr = function(str) {
 
 var reverseStr = function(str) {
   return str.split("").reverse().join("");
-
 }
 
 // -----------------------------------------------
