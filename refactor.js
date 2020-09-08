@@ -112,7 +112,7 @@ var reverseStr = function(str) {
 
 var reverseStr = function(str) {
   return str.split("").reverse().join("");
-  )
+
 }
 
 // -----------------------------------------------
@@ -128,32 +128,32 @@ var reverseStr = function(str) {
 // Refactor this function to use an object
 // instead of an if/else statement.
 
-var spanishColor = function(colorName) {
-  if (colorName.toLowerCase() === "rojo") {
-    return "#ff0000";
-  }
-  else if (colorName.toLowerCase() === "blanco") {
-    return "#ffffff";
-  }
-  else if (colorName.toLowerCase() === "azul") {
-    return "#0000ff";
-  }
-  else if (colorName.toLowerCase() === "verde") {
-    return "#00ff00";
-  }
-  else if (colorName.toLowerCase() === "negro") {
-    return "#000000";
-  }
-};
+// // var spanishColor = function(colorName) {
+//   if (colorName.toLowerCase() === "rojo") {
+//     return "#ff0000";
+//   }
+//   else if (colorName.toLowerCase() === "blanco") {
+//     return "#ffffff";
+//   }
+//   else if (colorName.toLowerCase() === "azul") {
+//     return "#0000ff";
+//   }
+//   else if (colorName.toLowerCase() === "verde") {
+//     return "#00ff00";
+//   }
+//   else if (colorName.toLowerCase() === "negro") {
+//     return "#000000";
+//   }
+// };
 
 // Put your answer below -------------------------
 
 let spanishColor = {
-  "rojo": "#ff0000" ;
-  "blanco": "#ffffff";
-  "azul": "0000ff";
-  "verde": "#00ff00";
-  "negro": "#000000";
+  "rojo": "#ff0000" ,
+  "blanco": "#ffffff",
+  "azul": "0000ff",
+  "verde": "#00ff00",
+  "negro": "#000000",
 }
 
 // -----------------------------------------------
@@ -216,15 +216,15 @@ callNtimes = function(callback, n) {
 
 // HINT: "global scope"
 
-var score = 0;
-
-var increaseScore = function() {
-  score++;
-};
-
-var decreaseScore = function() {
-  score--;
-};
+  // var score = 0;
+  //
+  // var increaseScore = function() {
+  //   score++;
+  // };
+  //
+  // var decreaseScore = function() {
+  //   score--;
+  // };
 
 // Put your answer below -------------------------
 (function() {
@@ -250,15 +250,20 @@ var decreaseScore = function() {
 // twoPlusTwo gets set to `undefined`. Refactor
 // the function to make it work.
 
-var addNumbers = function(numberA, numberB) {
-  console.log(numberA + numberB);
-};
-
-var twoPlusTwo = addNumbers(2,2);
+// var addNumbers = function(numberA, numberB) {
+//   console.log(numberA + numberB);
+// };
+//
+// var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
+var addNumbers = function(numberA, numberB) {
+  console.log(numberA + numberB);
+ return numberA + numberB;
+};
 
+var twoPlusTwo = addNumbers(2,2);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -283,7 +288,14 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// because doing math with an undefined number results in NaN
 
+
+var speed = 1;
+
+var accelerate = function(amount) {
+  speed += amount;
+};
 
 // -----------------------------------------------
 
